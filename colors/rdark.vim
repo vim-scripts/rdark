@@ -2,7 +2,7 @@
 " Maintaner: Radu Dineiu <radu.dineiu@gmail.com>
 " URL: http://ld.yi.org/vim/rdark/rdark.vim
 " Last Change: 2006 Dec 19
-" Version: 0.1
+" Version: 0.2
 
 set background=dark
 
@@ -27,12 +27,22 @@ hi IncSearch guibg=#2e3436 guifg=#fcaf3e
 hi StatusLine guifg=#2e3436 guibg=#babdb6 gui=none
 hi StatusLineNC guifg=#2e3436 guibg=#888a85 gui=none
 hi VertSplit guifg=#555753 guibg=#888a85 gui=none
-hi Folded guifg=#d3d7cf guibg=#204a87
 hi Visual guibg=#555753
 hi MoreMsg guifg=#729fcf
 hi Question guifg=#8ae234 gui=none
 hi WildMenu guifg=#eeeeec guibg=#2e3436
 hi PMenu guibg=#2e3436 guifg=#eeeeec
+hi LineNr guifg=#3f4b4d guibg=#000000
+
+" Diff
+hi DiffDelete guifg=#2e3436 guibg=#0e1416
+hi DiffAdd guibg=#1f2b2d
+hi DiffChange guibg=#2e3436
+hi DiffText guibg=#000000 gui=none
+
+" Folds
+hi Folded guifg=#d3d7cf guibg=#204a87
+hi FoldColumn guibg=#000000
 
 " Specials
 hi Title guifg=#fcaf3e
