@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1732
+
+A dark color scheme for the GUI, inspired by the Tango color scheme.
+Use vimscript #1571 to take full advantage of the PHP syntax highlighting features.
+
+Screenshot: http://ld.yi.org/vim/rdark/
+
+Features:
+  - let rdark_current_line = 1 if you want to highlight the current line
