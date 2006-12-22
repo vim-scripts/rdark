@@ -1,8 +1,8 @@
 " Vim color file
 " Maintaner: Radu Dineiu <radu.dineiu@gmail.com>
-" URL: http://ld.yi.org/vim/rdark/rdark.vim
-" Last Change: 2006 Dec 19
-" Version: 0.2
+" URL: http://ld.yi.org/vim/rdark
+" Last Change: 2006 Dec 22
+" Version: 0.3
 
 set background=dark
 
@@ -89,6 +89,37 @@ hi javaScriptOperator guifg=#888a85
 " HTML
 hi htmlTag guifg=#888a85
 hi htmlEndTag guifg=#888a85
+hi htmlTagName guifg=#babdb6
+hi htmlSpecialTagName guifg=#babdb6
+hi htmlArg guifg=#d3d7cf
+hi htmlTitle guifg=#8ae234 gui=none
+hi link htmlH1 htmlTitle
+hi link htmlH2 htmlH1
+hi link htmlH3 htmlH1
+hi link htmlH4 htmlH1
+hi link htmlH5 htmlH1
+hi link htmlH6 htmlH1
+
+" XML
+hi link xmlTag htmlTag
+hi link xmlEndTag htmlEndTag
+hi link xmlAttrib htmlArg
+
+" CSS
+hi cssSelectorOp guifg=#eeeeec
+hi link cssSelectorOp2 cssSelectorOp
+hi cssUIProp guifg=#d3d7cf
+hi link cssPagingProp cssUIProp
+hi link cssGeneratedContentProp cssUIProp
+hi link cssRenderProp cssUIProp
+hi link cssBoxProp cssUIProp
+hi link cssTextProp cssUIProp
+hi link cssColorProp cssUIProp
+hi link cssFontProp cssUIProp
+hi cssPseudoClassId guifg=#eeeeec
+hi cssBraces guifg=#888a85
+hi cssIdentifier guifg=#fcaf3e
+hi cssTagName guifg=#fcaf3e
 hi link cssInclude Function
 hi link cssCommonAttr Constant
 hi link cssUIAttr Constant
@@ -101,29 +132,3 @@ hi link cssBoxAttr Constant
 hi link cssTextAttr Constant
 hi link cssColorAttr Constant
 hi link cssFontAttr Constant
-hi cssSelectorOp2 guifg=#eeeeec
-hi cssSelectorOp guifg=#eeeeec
-hi cssUIProp guifg=#d3d7cf
-hi cssPagingProp guifg=#d3d7cf
-hi cssGeneratedContentProp guifg=#d3d7cf
-hi cssRenderProp guifg=#d3d7cf
-hi cssBoxProp guifg=#d3d7cf
-hi cssTextProp guifg=#d3d7cf
-hi cssColorProp guifg=#d3d7cf
-hi cssFontProp guifg=#d3d7cf
-hi cssPseudoClassId guifg=#eeeeec
-hi cssBraces guifg=#888a85
-hi cssIdentifier guifg=#fcaf3e
-hi cssTagName guifg=#fcaf3e
-" CSS
-
-hi htmlH6 guifg=#8ae234 gui=none
-hi htmlH5 guifg=#8ae234 gui=none
-hi htmlH4 guifg=#8ae234 gui=none
-hi htmlH3 guifg=#8ae234 gui=none
-hi htmlH2 guifg=#8ae234 gui=none
-hi htmlH1 guifg=#8ae234 gui=none
-hi htmlTitle guifg=#8ae234 gui=none
-hi htmlArg guifg=#d3d7cf
-hi htmlSpecialTagName guifg=#babdb6
-hi htmlTagName guifg=#babdb6
