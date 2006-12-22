@@ -1,8 +1,11 @@
 " Vim color file
 " Maintaner: Radu Dineiu <radu.dineiu@gmail.com>
-" URL: http://ld.yi.org/vim/rdark
-" Last Change: 2006 Dec 22
-" Version: 0.3
+" URL: http://ld.yi.org/vim/rdark/
+" Last Change: 2006 Dec 23
+" Version: 0.4
+"
+" Features:
+"   - let rdark_current_line = 1 if you want to highlight the current line
 
 set background=dark
 
@@ -13,9 +16,15 @@ endif
 
 let colors_name = "rdark"
 
+" Current Line
+if exists('rdark_current_line') && rdark_current_line == 1
+	set cursorline
+	hi CursorLine guibg=#191f21
+endif
+
 " Default Colors
 hi Normal guifg=#babdb6 guibg=#1e2426
-hi NonText guifg=#1e2426 guibg=#2c3032 gui=none
+hi NonText guifg=#2c3032 guibg=#2c3032 gui=none
 hi Cursor guibg=#babdb6
 hi ICursor guibg=#babdb6
 
@@ -27,10 +36,10 @@ hi IncSearch guibg=#2e3436 guifg=#fcaf3e
 hi StatusLine guifg=#2e3436 guibg=#babdb6 gui=none
 hi StatusLineNC guifg=#2e3436 guibg=#888a85 gui=none
 hi VertSplit guifg=#555753 guibg=#888a85 gui=none
-hi Visual guibg=#555753
+hi Visual guibg=#000000
 hi MoreMsg guifg=#729fcf
 hi Question guifg=#8ae234 gui=none
-hi WildMenu guifg=#eeeeec guibg=#2e3436
+hi WildMenu guifg=#eeeeec guibg=#0e1416
 hi PMenu guibg=#2e3436 guifg=#eeeeec
 hi LineNr guifg=#3f4b4d guibg=#000000
 
@@ -42,11 +51,17 @@ hi DiffText guibg=#000000 gui=none
 
 " Folds
 hi Folded guifg=#d3d7cf guibg=#204a87
-hi FoldColumn guibg=#000000
+hi FoldColumn guifg=#3465a4 guibg=#000000
 
 " Specials
 hi Title guifg=#fcaf3e
-hi Todo guifg=#fcaf3e
+hi Todo guifg=#fcaf3e guibg=bg
+hi SpecialKey guifg=#ef2929
+
+" Tabs
+hi TabLine guibg=#0a1012 guifg=#888a85
+hi TabLineFill guifg=#0a1012
+hi TabLineSel guibg=#555753 guifg=#eeeeec gui=none
 
 " Matches
 hi MatchParen guifg=#2e3436 guibg=#fcaf3e
@@ -55,7 +70,7 @@ hi MatchParen guifg=#2e3436 guibg=#fcaf3e
 hi Directory guifg=#ffffff
 
 " Syntax
-hi Comment guifg=#555753
+hi Comment guifg=#656763
 hi Constant guifg=#8ae234
 hi Number guifg=#8ae234
 hi Statement guifg=#729fcf gui=none
