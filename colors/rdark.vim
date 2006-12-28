@@ -2,10 +2,13 @@
 " Maintaner: Radu Dineiu <radu.dineiu@gmail.com>
 " URL: http://ld.yi.org/vim/rdark/
 " Last Change: 2006 Dec 23
-" Version: 0.4
+" Version: 0.5
 "
 " Features:
 "   - let rdark_current_line = 1 if you want to highlight the current line
+"
+" Changelog:
+"   0.5 - fixed the Pmenu colors
 
 set background=dark
 
@@ -40,8 +43,13 @@ hi Visual guibg=#000000
 hi MoreMsg guifg=#729fcf
 hi Question guifg=#8ae234 gui=none
 hi WildMenu guifg=#eeeeec guibg=#0e1416
-hi PMenu guibg=#2e3436 guifg=#eeeeec
 hi LineNr guifg=#3f4b4d guibg=#000000
+
+" Pmenu
+hi Pmenu guibg=#2e3436 guifg=#eeeeec
+hi PmenuSel guibg=#ffffff guifg=#1e2426
+hi PmenuSbar guibg=#555753
+hi PmenuThumb guifg=#ffffff
 
 " Diff
 hi DiffDelete guifg=#2e3436 guibg=#0e1416
